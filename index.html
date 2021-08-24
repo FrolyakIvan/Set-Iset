@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Сеть исеть</title>
+	
+	<style>
+		@font-face {
+			font-family: 'PF Din Text Comp Pro';
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Italic.eot');
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Italic.eot?#iefix') format('embedded-opentype'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Italic.woff') format('woff'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Italic.ttf') format('truetype');
+			font-weight: normal;
+			font-style: italic;
+		}
+
+		@font-face {
+			font-family: 'PF Din Text Comp Pro';
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Thin.eot');
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Thin.eot?#iefix') format('embedded-opentype'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Thin.woff') format('woff'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Thin.ttf') format('truetype');
+			font-weight: 100;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'PF Din Text Comp Pro XBlack';
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-XBlack.eot');
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-XBlack.eot?#iefix') format('embedded-opentype'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-XBlack.woff') format('woff'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-XBlack.ttf') format('truetype');
+			font-weight: 900;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'PF Din Text Comp Pro X';
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-XThin.eot');
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-XThin.eot?#iefix') format('embedded-opentype'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-XThin.woff') format('woff'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-XThin.ttf') format('truetype');
+			font-weight: 100;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'PF Din Text Comp Pro';
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Light.eot');
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Light.eot?#iefix') format('embedded-opentype'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Light.woff') format('woff'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Light.ttf') format('truetype');
+			font-weight: 300;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'PF Din Text Comp Pro';
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Regular.eot');
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Regular.eot?#iefix') format('embedded-opentype'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Regular.woff') format('woff'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Regular.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'PF Din Text Comp Pro';
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Medium.eot');
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Medium.eot?#iefix') format('embedded-opentype'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Medium.woff') format('woff'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Medium.ttf') format('truetype');
+			font-weight: 500;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'PF Din Text Comp Pro';
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Bold.eot');
+			src: url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Bold.eot?#iefix') format('embedded-opentype'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Bold.woff') format('woff'),
+				url('fonts/PFDIN/hinted-subset-PFDinTextCompPro-Bold.ttf') format('truetype');
+			font-weight: bold;
+			font-style: normal;
+		}
+	</style>
+  </head>
+  <body data-spy="scroll" data-target="#navbar-topp" data-offset="100">
+	<nav class="navbar navbar-default navbar-fixed-top" id="navbar-topp">
+		<div class="container">
+
+			<div class="row navbar-bottom">
+				<div class="col-lg-4 nav-logo">
+					<a href="#main-section"><img  class="img-responsive" src="img/logo.png" alt="Logo"></a>
+				</div>
+				<div class="col-lg-4 nav-list">
+					<ul class="navbar-list one">
+						<li class="navbar-list-items"><a class="link-blue active" href="#main-section">Главная</a><span class="underline-nav-blue"></span></li>
+						<li class="navbar-list-items"><a class="link-blue" href="#our-skills">О нас</a><span class="underline-nav-blue"></span></li>
+						<li class="navbar-list-items"><a class="link-blue" href="#types">Виды труб</a><span class="underline-nav-blue"></span></li>
+						<li class="navbar-list-items"><a class="link-blue" href="#privilege">Преимущества</a><span class="underline-nav-blue"></span></li>
+						<li class="navbar-list-items"><a class="link-blue" href="#footer">Контакты</a><span class="underline-nav-blue"></span></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 nav-list">
+					<ul class="navbar-list two" style="margin-right: 0px; text-align: right;">
+						<li class="navbar-list-number"><i class="fa fa-phone"></i>(343) 344-85-85</li>
+						<li class="navbar-list-email"><i class="fa fa-envelope"></i>set-iset@set-iset.ru</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav> 
+
+	<header id="main-section">
+		<div class="container">
+			<div class="row">
+				<div class="main-order col-xs-6">
+					<h1 class="wow fadeInDownBig" data-wow-delay=".75s">ТРУБА ПОЛИЭТИЛЕНОВАЯ</h1>
+					<ul class="main-order-list">
+						<li><img class="wow fadeInLeft" data-wow-delay="1s" src="img/list.main.icon.png" alt="Icon"><span class="move-list-text wow fadeInRight" data-wow-delay="1.25s">Качественно</span></li>
+						<li><img class="wow fadeInLeft" data-wow-delay="1s" src="img/list.main.icon.png" alt="Icon"><span class="move-list-text wow fadeInRight" data-wow-delay="1.5s">Склады в Eкатеринбурге и Москве</span></li>
+						<li><img class="wow fadeInLeft" data-wow-delay="1s" src="img/list.main.icon.png" alt="Icon"><span class="move-list-text wow fadeInRight" data-wow-delay="1.75s">Цены от производителя</span></li>
+					</ul>
+					<button class="btn-blue wow bounceInDown" data-wow-delay="1.75s" type="button" data-toggle="modal" data-target=".bs-example-modal-smm">Заказать</button>
+				</div>	
+			</div>
+		</div>
+	</header>
+
+	<section id="privilege">
+		<div class="container">
+			<div class="row">
+				<div class="section-headerr wow fadeIn" data-wow-delay="0.5s">
+					<h2 class="header-line">ПРОИЗВОДСТВЕННОЕ ОБЪЕДИНЕНИЕ СЕТЬ ИСЕТЬ</h2>
+					<span class="underline-header"></span>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 wow flipInX" data-wow-delay="2s">
+					<div class="privilege-box">
+						<div class="privilege-box-info text-center">
+							<img src="img/privilege/client-icon.png" alt="Client">
+							<p><span class="privilege-blue">3000</span> <br>довольных <br>клиентов</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 wow flipInY" data-wow-delay="1s">
+					<div class="privilege-box">
+						<div class="privilege-box-info text-center">
+							<img src="img/privilege/carry-icon.png" alt="Carry">
+							<p><span class="privilege-blue">2000 м<sup>2</sup></span> <br>склад готовой <br>продукции</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 wow flipInY" data-wow-delay="1s">
+					<div class="privilege-box settings-box">
+						<div class="privilege-box-info text-center">
+							<img src="img/privilege/settings-icon.png" alt="Settings">
+							<p>Собственные <br>производственные <br>мощности</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 wow flipInX" data-wow-delay="2s">
+					<div class="privilege-box like-box">
+						<div class="privilege-box-info text-center">
+							<img src="img/privilege/like-icon.png" alt="Like">
+							<p><span class="privilege-blue">4 года</span> <br>на рынке</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<section id="production">
+		<div class="container">
+			<div class="row">
+				<div class="section-headerr wow fadeIn" data-wow-delay="0.5s">
+					<h2 class="header-line">СОБСТВЕННОЕ ПРОИЗВОДСТВО ТЕХНИЧЕСКОЙ ТРУБЫ ПНД</h2>
+					<span class="underline-header"></span>
+				</div>
+				</div>
+				<div class="row padding-down">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay=".75s">
+						<ul class="production-list">
+							<li class="production-list-item"><img src="img/list.main.icon.png" alt="Icon"><span class="move-list-text-production">999 тонн трубы производится в месяц</span></li>
+							<li class="production-list-item"><img src="img/list.main.icon.png" alt="Icon"><span class="move-list-text-production">Производим трубы от 16 до 400 диаметра</span></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="1.25s">
+						<ul class="production-list">
+							<li class="production-list-item"><img src="img/list.main.icon.png" alt="Icon"><span class="move-list-text-production">2 склада с готовой продукцией</span></li>
+							<li class="production-list-item"><img src="img/list.main.icon.png" alt="Icon"><span class="move-list-text-production">Изготовим трубы под любой запрос</span></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="1.75s">
+						<button class="btn-blue production-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-smm">Заказать</button>
+					</div>
+				</div> <!-- /row -->
+				<div class="row padding-down-p-b">
+					<div class="col-lg-6 col-md-12 wow fadeInLeft" data-wow-delay="1.25s">
+						<div class="production-box">
+							<div class="production-box-info">
+								<h3>СКЛАД В ЕКАТЕРИНБУРГЕ</h3>
+								<ul class="production-box-info-one">
+									<li><img class="carry" src="img/production/carry-icon.png" alt="Icon"><span class="move-list-text-production move-list-text">Труба от 16 до 225 диаметра в наличии</span></li>
+									<li><img class="car" src="img/production/car-icon.png" alt="Icon"><span class="move-list-text-production move-list-text">2000 м<sup>2</sup> складской площади</span></li>
+									<li><img class="location-sizee" src="img/production/location-icon.png" alt="Icon"><span class="move-list-text-production move-list-text">Удобное расположение рядом с екад</span></li>
+									<li><img class="time" src="img/production/time-icon.png" alt="Icon"><span class="move-list-text-production move-list-text">Быстрая погрузка</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 wow fadeInRight" data-wow-delay="1.25s"><div class="production-box">
+							<div class="production-box-info">
+									<h3>СКЛАД В МОСКВЕ</h3>
+									<ul class="production-box-info-two">
+										<li><img class="carry" src="img/production/carry-icon.png" alt="Icon"><span class="move-list-text-production move-list-text">Труба самых популярных диаметров в наличии</span></li>
+										<li><img class="location-sizee" src="img/production/location-icon.png" alt="Icon"><span class="move-list-text-production move-list-text">5 км от мкад, удобная развязка</span></li>
+										<li><img class="time" src="img/production/time-icon.png" alt="Icon"><span class="move-list-text-production move-list-text">Отгрузка в день оплаты</span></li>
+									</ul>
+								</div>
+							</div></div>
+					</div> <!-- /row -->
+				</div>
+	</section>
+
+	<section id="types">
+		<div class="container-fluid">
+				<div class="row" style="">
+					<div class="col-lg-12 section-headerr wow fadeIn" data-wow-delay="0.5s">
+						<h2 class="header-line">ПОСТАВЛЯЕМ ТРУБУ ДЛЯ ЛЮБЫХ ИНЖЕНЕРНЫХ СЕТЕЙ <br>С ВАС ЗАДАЧА - С НАС РЕШЕНИЕ!</h2>
+						<span class="underline-header"></span>
+					</div>
+					<div class="container-fluid">
+						<div class="row bg-grey">
+							<div class="col-xs-12">
+								<ul class="t-list" role="tablist">
+									<li class="t-list-items wow fadeIn" data-wow-delay="1s" role="presentation"><a href="#electric" role="tab" data-toggle="tab" aria-controls="electric"
+									><p>Трубы для <br>электросетей</p>
+									<img  class="img-responsive electric" src="img/typeoftubes/electric.png" alt="Tubes"></a></li>
+									<li class="t-list-items wow fadeIn" data-wow-delay="1.25s" role="presentation"><a href="#water" role="tab" data-toggle="tab" aria-controls="water"
+									><p>Трубы для <br>водоснабжения</p>
+									<img  class="img-responsive water" src="img/typeoftubes/water.png" alt="Tubes"></a></li>
+									<li class="t-list-items active wow fadeIn" data-wow-delay="1.5s" role="presentation"><a href="#gas" role="tab" data-toggle="tab" aria-controls="gas"
+									><p>Трубы для <br>газоснабжения</p>
+									<img  class="img-responsive gas" src="img/typeoftubes/gas.png" alt="Tubes"></a></li>
+									<li class="t-list-items wow fadeIn" data-wow-delay="1.75s" role="presentation"><a href="#volc" role="tab" data-toggle="tab" aria-controls="volc"
+									><p>Трубы для <br>газоснабжения</p>
+									<img  class="img-responsive volc" src="img/typeoftubes/volc.png" alt="Tubes"></a></li>
+									<li class="t-list-items wow fadeIn" data-wow-delay="2s" role="presentation"><a href="#severage" role="tab" data-toggle="tab" aria-controls="severage"
+									><p>Трубы для дренажа <br>и канализации</p>
+									<img  class="img-responsive severage" src="img/typeoftubes/severage.png" alt="Tubes"></a></li>
+								</ul>
+							</div>
+							</div>
+						<div class="tab-content row">
+							<div class="tab-pane fade" id="electric" role="tabpanel">
+														<div class="row description">
+															<div class="col-xs-12">
+																<h3 class="tubes-header">ТРУБЫ ДЛЯ электросетей</h3>
+																<p class="tubes-text">Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
+															</div>
+														</div>
+														<div class="row tubes-property">
+															<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба питьевая безнапорная.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list">
+																			<li class="tubes-list-items"><span class="move-list-text">Полностью соответствует ГОСТ 18599-2001.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Соединение сваркой или фитингами.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Гарантия 50 лет.</span></li>								
+																		</ul>
+																	</div>
+																
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/electric-tube.jpg" alt="Electric tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d160 SDR17,6</p>
+																			<p class="tubes-box-price">315,32 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба техническая напорная.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list t-l-one">
+																			<li class="tubes-list-items"><span class="move-list-text">Используется в цехах и на стройках.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Соединение сваркой или фитингами.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Выдерживает высокое давление.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Высокая износостойкость.</span></li>						
+																		</ul>
+																	</div>
+																	
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/electric-tube.jpg" alt="Electric tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d25 SDR13,6</p>
+																			<p class="tubes-box-price">172,50 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба питьевая для ГНБ.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list t-l-one">
+																			<li class="tubes-list-items"><span class="move-list-text">Низкая цена.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Высокая прочность на разрыв.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Выдерживает высокое давление.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Для любых типов грунта.</span></li>							
+																		</ul>
+																	</div>
+																	
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/electric-tube.jpg" alt="Electric tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d110 SDR11</p>
+																			<p class="tubes-box-price">515,32 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+														</div>
+													</div>
+							<div class="tab-pane fade" id="water" role="tabpanel">
+														<div class="row description">
+															<div class="col-xs-12">
+																<h3 class="tubes-header">ТРУБЫ ДЛЯ водоснабжения</h3>
+																<p class="tubes-text">Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
+															</div>
+														</div>
+														<div class="row tubes-property">
+															<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба питьевая безнапорная.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list">
+																			<li class="tubes-list-items"><span class="move-list-text">Полностью соответствует ГОСТ 18599-2001.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Соединение сваркой или фитингами.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Гарантия 50 лет.</span></li>								
+																		</ul>
+																	</div>
+																
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/water-tube.jpg" alt="water tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d160 SDR17,6</p>
+																			<p class="tubes-box-price">315,32 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба техническая напорная.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list t-l-one">
+																			<li class="tubes-list-items"><span class="move-list-text">Используется в цехах и на стройках.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Соединение сваркой или фитингами.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Выдерживает высокое давление.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Высокая износостойкость.</span></li>						
+																		</ul>
+																	</div>
+																	
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/water-tube.jpg" alt="water tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d25 SDR13,6</p>
+																			<p class="tubes-box-price">172,50 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба питьевая для ГНБ.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list t-l-one">
+																			<li class="tubes-list-items"><span class="move-list-text">Низкая цена.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Высокая прочность на разрыв.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Выдерживает высокое давление.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Для любых типов грунта.</span></li>							
+																		</ul>
+																	</div>
+																	
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/water-tube.jpg" alt="water tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d110 SDR11</p>
+																			<p class="tubes-box-price">515,32 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+														</div>
+													</div>
+							<div class="tab-pane fade in active" id="gas" role="tabpanel">
+														<div class="row description">
+															<div class="col-xs-12">
+																<h3 class="tubes-header">ТРУБЫ ДЛЯ газоснабжения</h3>
+																<p class="tubes-text">Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
+															</div>
+														</div>
+														<div class="row tubes-property">
+															<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба питьевая безнапорная.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list">
+																			<li class="tubes-list-items"><span class="move-list-text">Полностью соответствует ГОСТ 18599-2001.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Соединение сваркой или фитингами.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Гарантия 50 лет.</span></li>								
+																		</ul>
+																	</div>
+																
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/gas-tube.jpg" alt="gas tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d160 SDR17,6</p>
+																			<p class="tubes-box-price">315,32 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба техническая напорная.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list t-l-one">
+																			<li class="tubes-list-items"><span class="move-list-text">Используется в цехах и на стройках.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Соединение сваркой или фитингами.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Выдерживает высокое давление.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Высокая износостойкость.</span></li>						
+																		</ul>
+																	</div>
+																	
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/gas-tube.jpg" alt="gas tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d25 SDR13,6</p>
+																			<p class="tubes-box-price">172,50 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба питьевая для ГНБ.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list t-l-one">
+																			<li class="tubes-list-items"><span class="move-list-text">Низкая цена.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Высокая прочность на разрыв.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Выдерживает высокое давление.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Для любых типов грунта.</span></li>							
+																		</ul>
+																	</div>
+																	
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/gas-tube.jpg" alt="gas tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d110 SDR11</p>
+																			<p class="tubes-box-price">515,32 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+														</div>
+													</div>
+							<div class="tab-pane fade" id="volc" role="tabpanel">
+														<div class="row description">
+															<div class="col-xs-12">
+																<h3 class="tubes-header">ТРУБЫ ДЛЯ волс</h3>
+																<p class="tubes-text">Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
+															</div>
+														</div>
+														<div class="row tubes-property">
+															<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба питьевая безнапорная.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list">
+																			<li class="tubes-list-items"><span class="move-list-text">Полностью соответствует ГОСТ 18599-2001.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Соединение сваркой или фитингами.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Гарантия 50 лет.</span></li>								
+																		</ul>
+																	</div>
+																
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/volc-tube.jpg" alt="volc tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d160 SDR17,6</p>
+																			<p class="tubes-box-price">315,32 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба техническая напорная.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list t-l-one">
+																			<li class="tubes-list-items"><span class="move-list-text">Используется в цехах и на стройках.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Соединение сваркой или фитингами.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Выдерживает высокое давление.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Высокая износостойкость.</span></li>						
+																		</ul>
+																	</div>
+																	
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/volc-tube.jpg" alt="volc tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d25 SDR13,6</p>
+																			<p class="tubes-box-price">172,50 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба питьевая для ГНБ.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list t-l-one">
+																			<li class="tubes-list-items"><span class="move-list-text">Низкая цена.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Высокая прочность на разрыв.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Выдерживает высокое давление.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Для любых типов грунта.</span></li>							
+																		</ul>
+																	</div>
+																	
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/volc-tube.jpg" alt="volc tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d110 SDR11</p>
+																			<p class="tubes-box-price">515,32 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+														</div>
+													</div>
+							<div class="tab-pane fade" id="severage" role="tabpanel">
+														<div class="row description">
+															<div class="col-xs-12">
+																<h3 class="tubes-header">ТРУБЫ ДЛЯ дренажа и канализации</h3>
+																<p class="tubes-text">Трубы полиэтиленовые для наружного водоснабжения являются современным решением для обеспечения водой любых потребителей. Полиэтиленовые трубы долговечны, намного дешевле в транспортировке, а их прокладка занимает, в среднем, в 10 раз меньше времени чем укладка традиционного трубопровода из металличских труб.</p>
+															</div>
+														</div>
+														<div class="row tubes-property">
+															<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба питьевая безнапорная.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list">
+																			<li class="tubes-list-items"><span class="move-list-text">Полностью соответствует ГОСТ 18599-2001.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Соединение сваркой или фитингами.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Гарантия 50 лет.</span></li>								
+																		</ul>
+																	</div>
+																
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/severage-tube.jpg" alt="severage tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d160 SDR17,6</p>
+																			<p class="tubes-box-price">315,32 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба техническая напорная.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list t-l-one">
+																			<li class="tubes-list-items"><span class="move-list-text">Используется в цехах и на стройках.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Соединение сваркой или фитингами.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Выдерживает высокое давление.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Высокая износостойкость.</span></li>						
+																		</ul>
+																	</div>
+																	
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/severage-tube.jpg" alt="severage tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d25 SDR13,6</p>
+																			<p class="tubes-box-price">172,50 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+															<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+																<div class="tubes-property-info">
+																	<h5 class="tubes-list-text">Труба питьевая для ГНБ.</h5>
+																	<div class="t-list">
+																		<ul class="tubes-list t-l-one">
+																			<li class="tubes-list-items"><span class="move-list-text">Низкая цена.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Высокая прочность на разрыв.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Выдерживает высокое давление.</span></li>
+																			<li class="tubes-list-items"><span class="move-list-text">Для любых типов грунта.</span></li>							
+																		</ul>
+																	</div>
+																	
+																		<div class="t-box">
+																			<img class="img-responsive" src="img/typeoftubes/severage-tube.jpg" alt="severage tube">
+																			
+																			<p class="tubes-box-name">Труба ПЭ100 d110 SDR11</p>
+																			<p class="tubes-box-price">515,32 Руб.</p>
+																			<button class="btn-blue tab-btn" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">купить</button>
+																		</div>
+																	
+																</div>
+															</div>
+														</div>
+													</div>
+													
+											
+										</div>
+									</div>
+								</div>
+							</div>
+				
+	</section>
+
+	<section id="fitting">
+		<div class="container">
+			<div class="row">
+				<div class="section-headerr wow fadeIn" data-wow-delay="0.5s">
+					<h2 class="header-line">В наличие на складе имеются все необходимые фитинги</h2>
+					<span class="underline-header"></span>
+				</div>
+			</div> <!-- /row -->
+
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12   box">
+					<div class="fitting-box wow fadeInLeft" data-wow-delay="1.5s">
+						<div class="row fitting-box-items">
+							<div class="col-lg-2 item-one"><img src="img/fitting/1.png" alt="Fitting example"></div>
+							<div class="col-lg-10 item-two">
+								<h3>Фитинги сварные</h3>
+								<ul>
+									<li><span class="move-list-text">Различные формы.</span></li>
+									<li><span class="move-list-text">Изготовлены из ПЭ100 и ПЭ80.</span></li>
+									<li><span class="move-list-text">Позволяют менять направление <br>трубопровода.</span></li>
+									<li><span class="move-list-text">Требуется сварочное <br>оборудование для монтажа.</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12  box">
+					<div class="fitting-box wow fadeIn" data-wow-delay="1.5s">
+						<div class="row fitting-box-items">
+							<div class="col-lg-2 item-one"><img src="img/fitting/2.png" alt="Fitting example"></div>
+							<div class="col-lg-10 item-two">
+								<h3>Фитинги компрессионные</h3>
+								<ul>
+									<li><span class="move-list-text">Легкий монтаж с помощью ключа.</span></li>
+									<li><span class="move-list-text">Идеальны для труб диаметром <br>16-110 мм.</span></li>
+									<li><span class="move-list-text">Позволяют менять направление <br>трубопровода.</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 box">
+					<div class="fitting-box wow fadeInRight" data-wow-delay="1.5s">
+						<div class="row fitting-box-items">
+							<div class="col-lg-2 item-one"><img src="img/fitting/3.png" alt="Fitting example"></div>
+							<div class="col-lg-10 item-two">
+								<h3>Фитинги электросварные</h3>
+								<ul>
+									<li><span class="move-list-text">Максимальная надежность.</span></li>
+									<li><span class="move-list-text">Диаметры от 20 до 1600 мм.</span></li>
+									<li><span class="move-list-text">Требуются специальное <br>сварочное оборудование.</span></li>
+									<li><span class="move-list-text">Позволяют менять направление <br>трубопровода.</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="our-skills">
+		<div class="container">
+			<div class="row">
+				<div class="section-headerr wow fadeIn" data-wow-delay="0.5s">
+					<h2 class="header-line">ПОЧЕМУ НАС ВЫБИРАЮТ?</h2>
+					<span class="underline-header"></span>
+				</div>
+			</div> <!-- /row -->
+
+			<div class="row text-center">
+				<div class="col-lg-4 wow bounceIn" data-wow-delay="0.5s"><div class="skills-box skill-one">
+					<div class="skills-box-items">
+							<img src="img/skills/1.png" alt="Skills">
+							<h3>ОТВЕТСТВЕННОСТЬ</h3>
+							<p>Если в результате нашей ошибки комплектования заказа вам был причинен ущерб, мы готовы нести финансовую ответственность и компенсировать ее частично или в полном размере.</p>
+						</div>
+				</div></div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow bounceIn" data-wow-delay="0.75s"><div class="skills-box skill-two">
+					<div class="skills-box-items">
+							<img src="img/skills/2.png" alt="Skills">
+							<h3>КОМПЕТЕНТНОСТЬ</h3>
+							<p>Успешно комплектовали наружные кабельные линии 110 кВ, не говоря уже о бессчетном количестве скомплектованных объектов до 35 кВ.</p>
+						</div>
+				</div></div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow bounceIn" data-wow-delay="1s"><div class="skills-box skill-three">
+					<div class="skills-box-items">
+							<img src="img/skills/3.png" alt="Skills">
+							<h3>ПОРЯДОЧНОСТЬ</h3>
+							<p>Если труба не подходит для ваших работ - мы скажем вам об этом и поможем подобрать верную. Нам важнее результат, а не формальное выполнений условий договора</p>
+						</div>
+				</div></div></div>
+				<div class="row text-center second-skill">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow bounceIn" data-wow-delay="1.25s"><div class="skills-box skill-four">
+						<div class="skills-box-items">
+								<img src="img/skills/4.png" alt="Skills">
+								<h3 class="skill-header-four">ЦЕНА-КАЧЕСТВО</h3>
+								<p class="skill-text-four">Собственные производственные мощности и прямые договора с тщательно отобранными проверенными производителями — гарантия доступной цены и хорошего качества.</p>
+							</div>
+					</div></div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow bounceIn" data-wow-delay="1.5s"><div class="skills-box skill-five">
+						<div class="skills-box-items">
+								<img src="img/skills/5.png" alt="Skills">
+								<h3 class="skill-header-five">ОПЛАТА</h3>
+								<p class="skill-text-five">Для постоянных клиентов возможна отсрочка платежей. Все обсуждается индивидуально.</p>
+							</div>
+					</div></div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12  s-b-move wow bounceIn" data-wow-delay="1.75s"><div class="skills-box skill-six">
+						<div class="skills-box-items">
+								<img src="img/skills/6.png" alt="Skills">
+								<h3>Гарантия возврата ДС</h3>
+								<p class="skill-text-six">Вы без проблем сможете возвратить денежные средства, вернув приобретенную продукцию, если был брак или просто что-то не подошло.</p>
+							</div>
+					</div></div>
+				</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row wow fadeIn" data-wow-delay="1s">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 f-lists">
+					<ul class="f-information-list">
+						<li class="f-information-list-items"><i class="fa fa-map-marker"></i>
+						<h3>Адрес офиса: г. Екатеринбург</h3>
+						<p>пр-кт Космонавтов, 145в/1</p></li>
+						<li class="f-information-list-items"><i class="fa fa-map-marker"></i>
+						<h3>Адрес склада: г. Екатеринбург</h3>
+						<p>пр-кт Космонавтов, 107</p></li>
+						<li class="f-information-list-items"><i class="fa fa-map-marker"></i>
+						<h3>Адрес склада: г. Москва</h3>
+						<p>ул. Производственная, 21 корп. БАЗА-4</p></li>
+					</ul>
+					<br>
+					<p class="call-back"><a class="call-link" href="#">Заказать обратный звонок</a></p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 f-lists">
+					<ul class="f-information-list">
+						<li class="f-information-list-items"><i class="fa fa-phone"></i>
+						<h3>Телефон:</h3>
+						<p>(343) 344-85-85</p></li>
+						<li class="f-information-list-items"><i class="fa fa-envelope"></i>
+						<h3>Почта:</h3>
+						<p>set-iset@set-iset.ru</p></li>
+						<li class="f-information-list-items"><i class="fa fa-location-arrow"></i>
+						<h3 class="header-edit">ИНН: 6686073064</h3>
+						<p>ОГРН: 1156658088982</p></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="footer-form">
+
+						<p class="form-header">НАПИШИТЕ НАМ</p>
+						<form class="main-footer-form" method="POST" id="main_form_ajax">
+							<input type="text" class="modal-input-name" placeholder="Ваше имя ..." name="C_name" id="C_name">
+							<input type="email" class="modal-input-email" placeholder="Ваш e-mail ..." name="C_email" id="C_email">
+							<textarea placeholder="Ваш вопрос ..." name="C_message" class="modal-input-text" id="C_message" rows="5"></textarea>
+							<button type="submit" class="btn-blue form-btn" id="submit-btn">Отправить</button>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- MODAL-WINDOWS -->
+	<div class="modal fade bs-example-modal-smm" id="modal_hide" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+	    <div class="modal-content">
+	    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+	      <div class="modal-headerr text-center">
+	      	<p><span class="modal-header-edit">Для заказа оставьте заявку</span><br>и мы напишем вам для уточнения деталей</p>
+	      	</div>
+		      	<div class="modal-form">
+		      		<form  method="POST" id="main_form_ajaxx">
+		      			<input  class="modal-input-name" type="text" placeholder="Ваше имя ..." name="R_name" id="R_name">
+		      			<input class="modal-input-email" type="email" placeholder="Ваш e-mail ..." name="R_email" id="R_email">
+		      			<button class="btn-blue modal-btn" type="submit" id="request-btn">Оставить заявку</button>
+		      		</form>
+		      	</div>
+	      
+	    </div>
+	  </div> <!-- MODAL-WINDOW-REQUEST -->
+	</div>
+	<div class="modal fade bs-example-modal-sm" id="modal_hidee" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+	    <div class="modal-content">
+	    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+	      <div class="modal-headerr text-center">
+	      	<p><span class="modal-header-edit">Для покупки оставьте заявку</span><br>и мы напишем вам для уточнения деталей</p>
+	      	</div>
+		      	<div class="modal-form">
+		      		<form  method="POST" id="main_form_ajaxxx">
+		      			<input  class="modal-input-name" required="" type="text" placeholder="Ваше имя ..." name="B_name" id="B_name">
+		      			<input class="modal-input-email" required="" type="email" placeholder="Ваш e-mail ..." name="B_email" id="B_email">
+		      			<button class="btn-blue modal-btn" type="submit" id="buy-submit-btn">Оставить заявку</button>
+		      		</form>
+		      	</div>
+	      
+	    </div>
+	  </div> <!-- MODAL-WINDOW-BUY -->
+	</div>
+	<div class="modal fade bs-example-modal-sm-f" tabindex="-1" id="modal_thanks" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm-f" role="document">
+	    <div class="modal-content thanks text-center">
+	    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+	     	<p><span class="modal-header-edit-thanks">Ваша заявка отправлена</span><br>Мы скоро Вам напишем</p>
+	    </div>
+	  </div> <!-- MODAL-WINDOW-THANKS --> <!-- MODAL-WINDOW-THANKS -->
+	</div>	
+
+
+	 	<!-- STYLE'S -->
+		<link rel="stylesheet" href="css/style.css">
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/font-awesome.css">
+	    <link rel="stylesheet" href="css/animate.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/validator-ajax-contact.js"></script>
+	<script src="js/validator-ajax-buy.js"></script>
+	<script src="js/validator-ajax-request.js"></script>  
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+           new WOW().init();
+
+    </script>    	
+ 	<script>
+    	$(document).ready(function() {
+    		$('.navbar').css({'display': 'block', 'position':'relative'});
+    		$(function(){
+    		  $(window).scroll(function() { 
+    		  var top = $(document).scrollTop(),
+    		      heightNavbar = $('.navbar').height(), //получаем высоту блока
+    		      heightSection = $('#main-section').height(); //получаем высоту секции
+    		    if (top>heightNavbar) {
+    		    	$('.navbar').css({'opacity':'0'});
+    		    }
+    		    if (top > heightSection) {
+    		    	$('.navbar').css({'position':'fixed'});
+    		    	$('.navbar').animate({opacity:1.0},30);
+    		    }
+    		    if (top == 0) {
+    		    	$('.navbar').css({'display': 'block', 'position':'relative','opacity':'1'});
+    		    }
+    		  });
+    		});
+      	}) 
+    </script> <!-- NAVBAR-APPEAR -->
+    <script>
+    	$('.navbar-list:first-child').click(function(){
+    		$('.navbar').css({'display': 'block', 'position':'relative'});
+    	})
+    </script>
+    <script>
+    	$(document).ready(function() {
+    		$('.modal-input-name').click(function() {
+    			$('.modal-input-name').css({
+    				
+					"box-shadow": "0px 7px 13px 0px rgba(51, 51, 51, 0.2)",
+					"color": "black"
+    			}); /*hover, click effects*/
+
+    			$('.modal-input-email').click(function() {
+    				$('.modal-input-name').css("box-shadow", "none");
+    					
+    			}) /*last-box-shadow sign*/
+    			$('.modal-input-text').click(function() {
+    				$('.modal-input-name').css("box-shadow", "none");
+    					
+    			}) /*last-box-shadow sign*/
+    			$('.modal-input-text').click(function() {
+    				$('.modal-input-email').css("box-shadow", "none");
+    					
+    			}) /*last-box-shadow sign*/
+    						
+    			
+    		})
+    		$('.modal-input-email').click(function() {
+    			$('.modal-input-email').css({
+    				
+
+					"box-shadow": "0px 7px 13px 0px rgba(51, 51, 51, 0.2)",
+					"color": "black"
+    			}); /*hover, click effects*/
+
+    			$('.modal-input-name').click(function() {
+    				$('.modal-input-email').css("box-shadow", "none");
+    					$('.modal-btn').click(function() {
+    						$('.modal-input-name').css("box-shadow", "none");
+    						$('.modal-input-email').css("box-shadow", "none");
+    						$('.modal-input-text').css("box-shadow", "none");
+
+    					})
+    			}) /*last-box-shadow sign*/
+    			    			
+    		})/*  //click-input*/
+    			
+    	  	})
+    </script> <!-- INPUT-SETTINGS -->
+    <script>
+    	$(document).ready(function() {
+    		linkInterno = $('a[href^="#main-section"]');
+    		linkInterno.on('click',function(e) {
+    		    		    e.preventDefault();
+    		    		    var href = $(this).attr('href');
+    		    		    $('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow');
+    		    		    });
+    		linkInterno = $('a[href^="#our-skills"]');
+    		linkInterno.on('click',function(e) {
+    		    		    e.preventDefault();
+    		    		    var href = $(this).attr('href');
+    		    		    $('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow');
+    		    		    });
+    		linkInterno = $('a[href^="#types"]');
+    		linkInterno.on('click',function(e) {
+    		    		    e.preventDefault();
+    		    		    var href = $(this).attr('href');
+    		    		    $('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow');
+    		    		    });
+    		linkInterno = $('a[href^="#privilege"]');
+    		linkInterno.on('click',function(e) {
+    		    		    e.preventDefault();
+    		    		    var href = $(this).attr('href');
+    		    		    $('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow');
+    		    		    });
+    		linkInterno = $('a[href^="#footer"]');
+    		    linkInterno.on('click',function(e) {
+    		    e.preventDefault();
+    		    var href = $(this).attr('href');
+    		    $('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow');
+    		    });
+    	})
+    </script> <!-- SLOW-SCROLLING-NAV -->
+    <script>
+    	$('.link-blue').click(function() {
+    	    $('.link-blue').removeClass('active');
+    	    $(this).addClass('active');
+    	});
+    </script> <!-- NAVABR-ACTIVE -->
+    <script>
+    	$(document).ready(function(){
+    	    $('body').scrollspy({target: ".navbar", offset: 100});   
+    	});
+    </script>
+    
+
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45323181 = new Ya.Metrika({ id:45323181, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45323181" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  </body>
+</html>
